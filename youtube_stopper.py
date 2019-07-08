@@ -1,10 +1,10 @@
 import os
 import time
-
 def closing(websites,t):
-  os.system(websites)
+  os.system("start {}".format(websites))
   time.sleep(t)
   os.system("TASKKILL /IM chrome.exe /F")
+  print("close chrome.exe")
 
 if __name__ == '__main__':
     websites=input("Enter website:")
